@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>💰 Expense Tracker</h1>
+
+        <!-- Summary Cards -->
+        <div class="summary">
+
+            <div class="card">
+                <h3>Balance</h3>
+                <p id="balance">₹0</p>
+            </div>
+
+            <div class="card income">
+                <h3>Income</h3>
+                <p id="income">₹0</p>
+            </div>
+
+            <div class="card expense">
+                <h3>Expenses</h3>
+                <p id="expense">₹0</p>
+            </div>
+
+        </div>
+
+        <!-- Transaction Form -->
+        <div class="form">
+
+            <h2>Add Transaction</h2>
+
+            <input type="text" id="description" placeholder="Description">
+
+            <input type="number" id="amount" placeholder="Amount">
+
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <select id="category">
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Bills</option>
+                <option>Salary</option>
+                <option>Other</option>
+            </select>
+
+            <input type="date" id="date">
+
+            <button id="addBtn">Add Transaction</button>
+
+        </div>
+
+        <!-- Filter -->
+        <div class="filter">
+
+            <h2>Filter by Category</h2>
+
+            <select id="filterCategory">
+                <option value="All">All</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Bills">Bills</option>
+                <option value="Salary">Salary</option>
+                <option value="Other">Other</option>
+            </select>
+
+        </div>
+        <h3>Filter Expenses</h3>
+
+<select id="filterCategory">
+    <option value="All">All Categories</option>
+    <option value="Food">Food</option>
+    <option value="Travel">Travel</option>
+    <option value="Shopping">Shopping</option>
+    <option value="Bills">Bills</option>
+    <option value="Salary">Salary</option>
+    <option value="Other">Other</option>
+</select>
+
+        <!-- Transaction History -->
+        <div class="history">
+
+            <h2>Transaction History</h2>
+
+            <ul id="transactionList"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
